@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="dev.bogdanbalalau.bookstore.controller.BookStoreController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <Button prefWidth="100" text="Create book" onAction="#openCreateBookWindow" />
+    <Button prefWidth="100" text="Get book by id" onAction="#openGetBookByIdWindow" />
+    <Button prefWidth="100" text="Get all books" />
+    <Button prefWidth="100" text="Update book" />
+    <Button prefWidth="100" text="Delete book" />
+</VBox>
