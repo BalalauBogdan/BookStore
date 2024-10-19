@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.VBox?>
 
 <?import javafx.scene.control.Button?>
@@ -13,7 +12,7 @@
 
     <Button prefWidth="100" text="Create book" onAction="#openCreateBookWindow" />
     <Button prefWidth="100" text="Get book by id" onAction="#openGetBookByIdWindow" />
-    <Button prefWidth="100" text="Get all books" />
-    <Button prefWidth="100" text="Update book" />
-    <Button prefWidth="100" text="Delete book" />
+    <Button prefWidth="100" text="Get all books" onAction="#openGetAllBooksWindow" />
+    <Button prefWidth="100" text="Update book" onAction="#openUpdateBookWindow" />
+    <Button prefWidth="100" text="Delete book" onAction="#openDeleteBookWindow" />
 </VBox>
