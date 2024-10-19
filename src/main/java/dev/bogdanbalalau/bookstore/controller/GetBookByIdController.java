@@ -3,6 +3,7 @@ package dev.bogdanbalalau.bookstore.controller;
 import dev.bogdanbalalau.bookstore.entity.Book;
 import dev.bogdanbalalau.bookstore.service.BookService;
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
@@ -50,7 +51,15 @@ public class GetBookByIdController {
             this.priceLabel.setVisible(true);
             this.priceField.setVisible(true);
         } catch (Exception e) {
-            e.printStackTrace();
+            this.showConfirmationMessage(Alert.AlertType.ERROR,"Error","Book not found with id: " + this.bookIdField.getText());
         }
+    }
+
+    private void showConfirmationMessage(Alert.AlertType alertType, String title, String message) {
+        Alert alert = new Alert(alertType);
+        alert.setTitle(title);
+        alert.setHeaderText(null);
+        alert.setContentText(message);
+        alert.showAndWait();
     }
 }
